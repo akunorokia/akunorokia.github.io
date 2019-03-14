@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github on Akunorokia</title>
-    <link>https://example.com/tags/github/</link>
+    <link>https://akunorokia.github.io/tags/github/</link>
     <description>Recent content in github on Akunorokia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://akunorokia.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何在github.io搭建Hugo博客站</title>
-      <link>https://example.com/2019/2019-03-14-first-manual/</link>
+      <link>https://akunorokia.github.io/2019/2019-03-14-first-manual/</link>
       <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/2019-03-14-first-manual/</guid>
+      <guid>https://akunorokia.github.io/2019/2019-03-14-first-manual/</guid>
       <description>摘要 在前面的博文中介绍了如何在github.io上搭建自己的博客站，基于的是Jekyll，这也是github中比较常用的方式，好处是github可以自动调用Jekyll来帮你及时生成、更新你的博客站。本来一切还是挺美好的，随着使用的深入，博主发现有几点实在是不能忍：
  github上面的Jekyll版本实在太低了，对于code block渲染问题严重。最受不了的一点就是很多种类型的code在里面被显示成一行 Jekyll对文章的文件名有着严格的定义，且不能够放到不同的目录，这个在博文比较多的时候极为不便  博主平时喜欢关注各种新技术，较早的时候就曾关注过一个的博客建站的工具Hugo，用Go语言（博主的最爱之一）写的，当时就觉得挺不错。经过这几年的发展已经非常成熟，Github上面的Stars截止本文已经24250了。在经过一段时间的Jekyll的折磨之后，终于乘着最近稍微闲了一点，将Jekyll彻底换成了Hugo。本文就简单介绍一下，如何在github.io上部署你的Hugo博客站。
 准备工作 跟基于Jekyll一样，如果需要在github.io上部署的话，必须在github上创建你自己的&amp;lt;username&amp;gt;.github.io的repo，详细过程请参见前面的博文。
