@@ -10,6 +10,40 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>unsafe包初涉小记</title>
+      <link>https://akunorokia.github.io/2019/2019-03-15-unsafe%E5%8C%85%E5%88%9D%E6%B6%89%E5%B0%8F%E8%AE%B0/</link>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akunorokia.github.io/2019/2019-03-15-unsafe%E5%8C%85%E5%88%9D%E6%B6%89%E5%B0%8F%E8%AE%B0/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;示例code:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;    var Astruct struct {
+        a int
+        b string
+    }
+    
+    Astruct.a = 1
+    Astruct.b = &amp;quot;1&amp;quot;
+    
+    s := &amp;amp;Astruct
+    b := (*string)(unsafe.Pointer(uintptr(unsafe.Pointer(s)) + uintptr(unsafe.Sizeof(int(0)))))
+    *b = &amp;quot;000&amp;quot;
+    fmt.printf(&amp;quot;aa:%v\r\n&amp;quot;, Astruct)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;个人初见：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;利用&lt;strong&gt;&lt;em&gt;unsafe&lt;/em&gt;&lt;/strong&gt;包可以通过内存中的&lt;strong&gt;公有变量&lt;/strong&gt;定位到内存地址，进而对定位推算到的&lt;strong&gt;公/私有变量值&lt;/strong&gt;进行&lt;strong&gt;&lt;em&gt;取值&lt;/em&gt;&lt;/strong&gt;和&lt;strong&gt;&lt;em&gt;赋值&lt;/em&gt;&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;像不像&lt;strong&gt;外挂&lt;/strong&gt;?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>【转载】人人当老板，谁来做长工</title>
       <link>https://akunorokia.github.io/2019/2019-03-15-mentality-you-should-be/</link>
       <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
