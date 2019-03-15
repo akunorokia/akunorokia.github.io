@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Akunorokia</title>
-    <link>https://akunorokia.github.io/posts/</link>
-    <description>Recent content in Posts on Akunorokia</description>
+    <title>心态 on Akunorokia</title>
+    <link>https://akunorokia.github.io/tags/%E5%BF%83%E6%80%81/</link>
+    <description>Recent content in 心态 on Akunorokia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://akunorokia.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://akunorokia.github.io/tags/%E5%BF%83%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -84,31 +84,6 @@
 面对和斗大的字不识一箩筐的农民的竞争，这些地主出生的人即使倾家荡产，只要积累得当，攒够买下第一块土地的钱，依然可以重新开始他们的滚雪球游戏！
 这不就是王者开个小号打青铜嘛，除了原始积累困难点，其他方面难度并没有想象的大。
 看清方向，读懂政策，看明白媒体怎么给傻乎乎的吃瓜群众洗脑让他享受被压榨的过程，有点脑子的吃瓜群众又怎么借政策东风，略微改善被裹挟的命运，尽可能活的轻松点，在全世界任何国家，都是一生的必修课。</description>
-    </item>
-    
-    <item>
-      <title>如何在github.io搭建Hugo博客站</title>
-      <link>https://akunorokia.github.io/2019/2019-03-14-first-manual/</link>
-      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://akunorokia.github.io/2019/2019-03-14-first-manual/</guid>
-      <description>摘要 在前面的博文中介绍了如何在github.io上搭建自己的博客站，基于的是Jekyll，这也是github中比较常用的方式，好处是github可以自动调用Jekyll来帮你及时生成、更新你的博客站。本来一切还是挺美好的，随着使用的深入，博主发现有几点实在是不能忍：
- github上面的Jekyll版本实在太低了，对于code block渲染问题严重。最受不了的一点就是很多种类型的code在里面被显示成一行 Jekyll对文章的文件名有着严格的定义，且不能够放到不同的目录，这个在博文比较多的时候极为不便  博主平时喜欢关注各种新技术，较早的时候就曾关注过一个的博客建站的工具Hugo，用Go语言（博主的最爱之一）写的，当时就觉得挺不错。经过这几年的发展已经非常成熟，Github上面的Stars截止本文已经24250了。在经过一段时间的Jekyll的折磨之后，终于乘着最近稍微闲了一点，将Jekyll彻底换成了Hugo。本文就简单介绍一下，如何在github.io上部署你的Hugo博客站。
-准备工作 跟基于Jekyll一样，如果需要在github.io上部署的话，必须在github上创建你自己的&amp;lt;username&amp;gt;.github.io的repo，详细过程请参见前面的博文。
-搭建Hugo博客站 安装Hugo Hugo的安装非常简单，在MAC上执行：
-brew install hugo  其它安装方式，可以参见官网教程。
-创建你的博客站  在github上面创建博客文章的repo
-Hugo的建站部署方式跟Jekyll不同，github会自动的识别Jekyll并调用Jekyll工具帮你自动生成、更新博客站，所以我们只需要直接在自己的&amp;lt;username&amp;gt;.github.io中编写文章并上传即可。但是github并不能直接识别Hugo的内容，因此，这个博客站的生成、更新的工作得由你自己完成，&amp;lt;username&amp;gt;.github.io只是用来托管你生成后的静态网站的内容（github支持托管静态网站，请参见这里)，因此，你还需要另一个git repo来真正的编辑、保存、管理你的博文。为此，博主创建了一个名为blogs的repo，以下说到博文管理repo指的就是这个repo。
- 用Hugo建站
- 初始化博客站
-hugo new site blogs  git init
-cd blogs git init  指定github源
-git remote add origin git@github.com:keysaim/blogs.git   这样，你本地的初始化的Hugo博客站已经准备好了。
- 添加一个主题
-Hugo官方有非常多的免费开源的主题，猛击这里。博主选用的是国人开发的一款主题Jane。
-git submodule add -b master https://github.com/xianmin/hugo-theme-jane.git themes/jane cp -r themes/jane/exampleSite/content ./ cp themes/jane/exampleSite/config.toml ./  本地测试
-在部署之前，先本地测试一下：
-hugo server  然后本地浏览器打开http://localhost:1313，没有意外的话你将看到类似这样的：</description>
     </item>
     
   </channel>
